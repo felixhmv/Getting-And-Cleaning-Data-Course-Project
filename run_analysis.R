@@ -39,4 +39,4 @@ merged_subset <- subset(merged_data, ,test)
 
 #We will now aggregate the tables in order to create a tidy dataset with the average of each variable for each activity and each subject
 tidydata <- aggregate(merged_subset[,4:82], list(subject = merged_subset$subject, activity_description = merged_subset$activity_description), mean)
-write.table(tidydata, "tidy_dataset.txt")
+write.table(tidydata, "tidy_dataset.txt", row.name= FALSE)
