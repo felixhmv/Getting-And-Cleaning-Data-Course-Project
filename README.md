@@ -6,10 +6,15 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 
 The run_analysis program, in essense, perform the following steps:
   1) Loads the data
+  
   2) Labels the columns
+  
   3) row-binds two major tables
+  
   4) Adds a descriptive activity label column
+  
   5) subsets the columns only keeping those listing the subject, activity type, and  with "mean" or "std" in the column name
+  
   6) pivots the data by subject and activity type and calculates the mean for all the variable columns that had "mean" or "std" in the name.
 
 The original dataset can be retrieved from the following link, once you extract the zip file, save the folder in your working directory.
