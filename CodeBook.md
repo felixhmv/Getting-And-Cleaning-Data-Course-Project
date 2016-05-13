@@ -1,6 +1,6 @@
 Project CodeBook
 
-INPUT AND OUTPUT DATA
+INPUT AND OUTPUT VARIABLES
 
 As indicated on the README file, the original dataset can be downloaded from the following link (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). It contains a series of text files that describes every column of the dataset. 
 
