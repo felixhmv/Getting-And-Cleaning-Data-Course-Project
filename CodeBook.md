@@ -1,6 +1,7 @@
 Project CodeBook
 
 INPUT AND OUTPUT DATA
+
 As indicated on the README file, the original dataset can be downloaded from the following link (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). It contains a series of text files that describes every column of the dataset. 
 
 Using the above-mentioned files as a starting point, we can describe the key components of our table in terms of how they came from the original. The analysis.R program will create a data table in your working directory named "tidy_dataset.txt"
@@ -10,6 +11,7 @@ Using the above-mentioned files as a starting point, we can describe the key com
 - The remaining 79 columns are a mean of all the observations, by subject and by activity, for all the variable columns in the original dataset that had a mean or std in the title.
 
 KEY SCRIPT FEATURES
+
 read.tables was used extensively to load the data for manipulation. In order for this section to work properly, you need to save the unzipped folder to your working directory (the unzipped file should be named UCI HAR Dataset)
 rbind and cbind were used to combine the "test" and "training" datasets into one. Both of these datasets have the same columns (i.e. variables) but different number of observations (read the link on the readme file for more details on these two tables)
 grepl was used to create a logical vector for those column that matched the criteria of containing the following words: "mean|std|activity_label|activity_description|subject", then we subset the data to keep only these columns)
