@@ -5,6 +5,7 @@ The run_analysis.R is a program that cleans the data and calculates the mean val
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 The run_analysis program, in essense, perform the following steps:
+ 
   1) Loads the data
   
   2) Labels the columns
